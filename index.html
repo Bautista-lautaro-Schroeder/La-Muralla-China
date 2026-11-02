@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Gran Muralla China - Historia y Arquitectura</title>
+    
+    <!-- Ícono de la pestaña del sitio web (puedes subir un archivo llamado icono.png) -->
+    <link rel="icon" href="icono.png" type="image/png">
+
     <style>
         :root {
             --primary-color: #8c1d1d;
@@ -21,6 +25,7 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
+            position: relative;
         }
 
         header {
@@ -191,9 +196,40 @@
             color: #f8fafc;
             font-size: 1.1rem;
         }
+
+        /* --- Estilo del Portal Secreto en la Esquina --- */
+        .portal-corner {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 90px;
+            height: 90px;
+            z-index: 9999;
+            opacity: 0;
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            cursor: pointer;
+        }
+
+        /* Se vuelve visible únicamente al pasar el mouse o al tocar con el dedo */
+        .portal-corner:hover,
+        .portal-corner:active {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        .portal-corner img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Portal Secreto oculto en la esquina inferior derecha -->
+    <div class="portal-corner" title="¡Has encontrado el portal!">
+        <img src="portal.png" alt="Portal">
+    </div>
 
     <header>
         <h1>La Gran Muralla China</h1>
@@ -310,7 +346,6 @@
             <h2>Multimedia: Presentación y Detalles</h2>
             <div class="video-container">
                 <p>Haz clic en el reproductor para ver el video explicativo:</p>
-                <!-- El video inicia automáticamente en el minuto 4:19 (#t=259) -->
                 <video controls preload="metadata">
                     <source src="muralla.mp4#t=259" type="video/mp4">
                     Tu navegador no soporta la reproducción de videos.
