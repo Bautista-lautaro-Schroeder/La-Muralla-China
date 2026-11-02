@@ -49,6 +49,43 @@
             padding: 0 1.5rem;
         }
 
+        .audio-section {
+            background: var(--card-bg);
+            padding: 1.5rem 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            text-align: center;
+            border-left: 6px solid var(--secondary-color);
+        }
+
+        .audio-section h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .audio-section audio {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px 0;
+        }
+
+        .audio-fallback {
+            background: #fdf6b2;
+            border: 1px solid #fce96a;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+            text-align: left;
+            font-size: 0.95rem;
+            color: #723b13;
+        }
+
+        .audio-fallback strong {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
         .intro-box {
             background-color: #fef2f2;
             border-left: 6px solid var(--primary-color);
@@ -164,6 +201,25 @@
     </header>
 
     <main>
+        <!-- Reproductor de Audio y Texto de Presentaci&oacute;n -->
+        <div class="audio-section">
+            <h3>Presentaci&oacute;n de la Maqueta</h3>
+            <p>Toca para reproducir el audio explicativo:</p>
+            <!-- Reemplaza "audio.wav" por el nombre de tu archivo de audio -->
+            <audio controls preload="metadata">
+                <source src="audio.wav" type="audio/wav">
+                Tu navegador no soporta la reproducci&oacute;n de audio.
+            </audio>
+            
+            <div class="audio-fallback">
+                <strong>Si no puedes escuchar el audio, te dejo este texto :)) :</strong>
+                <p>Hola, esta, como podes ver aqu&iacute; adelante, es mi maqueta de ciencias sociales primer a&ntilde;o. Es la muralla china.</p>
+                <p>Mi nombre es Schroeder, Bautista Lautaro Schroeder. Eleg&iacute; esta maqueta porque me gust&oacute; en la civilizaci&oacute;n china y me gust&oacute; como era su muralla que usaban para defenderse de los otros enemigos.</p>
+                <p>La construyeron manualmente, la muralla la construyeron manualmente. Tiene como una altura de 7 a 10 metros. 20.000 kil&oacute;metros de largo, m&aacute;s de 20.000 Km. Para construir la muralla se utilizaron ladrillos, piedras talladas, arcilla, tierra comprimida y m&aacute;s materiales.</p>
+                <p>Bueno, si quieres m&aacute;s informaci&oacute;n puedes seguir mirando el sitio web aqu&iacute; abajo. O al fondo del sitio web elegir revisar el Google Drive donde est&aacute; toda la informaci&oacute;n suelta y tambi&eacute;n un poquito extra.</p>
+            </div>
+        </div>
+
         <div class="intro-box">
             <p>Esta enorme barrera de protecci&oacute;n comenz&oacute; a ser construida bajo el imperio de <strong>Qin Shi Huang</strong> y continu&oacute; hasta la <strong>dinast&iacute;a Ming</strong>. Es un reflejo de la imponente arquitectura china y de la historia pol&iacute;tica y militar de la regi&oacute;n. Fue declarada Patrimonio de la Humanidad por la UNESCO.</p>
         </div>
@@ -241,7 +297,7 @@
         <section>
             <h2>Estructuras y Pasos Destacados</h2>
             <ul>
-                <li><strong>Muros:</strong> Sucesi&oacute;n de muros interconectados dise&ntilde;ados bajo el objetivo de ofrecer una alta defensa estrat&eacutegica.</li>
+                <li><strong>Muros:</strong> Sucesi&oacute;n de muros interconectados dise&ntilde;ados bajo el objetivo de ofrecer una alta defensa estrat&eacute;gica.</li>
                 <li><strong>Torres:</strong> Puestos que inhib&iacute;an la entrada de enemigos y contaban con una &uacute;nica escalera de acceso.</li>
                 <li><strong>Paso Juyong:</strong> De 7,8 m de altura y 5 m de ancho. Modernizado hasta las &uacute;ltimas dinast&iacute;as.</li>
                 <li><strong>Paso Jiayuguan:</strong> Construido en la dinast&iacute;a Ming, clave para el comercio por su rol en la Ruta de la Seda.</li>
@@ -273,6 +329,7 @@
     <footer>
         <p class="footer-project">Proyecto Micro-Maquetas</p>
         <p>Bautista Lautaro Schroeder</p>
+        <p style="margin-top: 10px;"><a href="AQUÍ_PEGAS_EL_LINK_DE_GOOGLE_DRIVE" target="_blank" style="color: #60a5fa; text-decoration: underline;">Revisar el Google Drive con informaci&oacute;n extra</a></p>
     </footer>
 
 </body>
