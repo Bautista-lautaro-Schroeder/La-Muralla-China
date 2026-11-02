@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gran Muralla China - Historia y Arquitectura</title>
+    <style>
+        :root {
+            --primary-color: #8c1d1d;
+            --secondary-color: #d97706;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --header-bg: #1c1917;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            color: #ffffff;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #d6d3d1;
+            font-size: 1.1rem;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .intro-box {
+            background-color: #fef2f2;
+            border-left: 6px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+            font-size: 1.05rem;
+        }
+
+        .grid-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 1.2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-top: 3px solid var(--secondary-color);
+        }
+
+        .stat-card h3 {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #64748b;
+            text-transform: uppercase;
+        }
+
+        .stat-card p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        section {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: var(--header-bg);
+            color: #a8a29e;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>La Gran Muralla China</h1>
+        <p>Patrimonio de la Humanidad y Maravilla del Mundo Moderno</p>
+    </header>
+
+    <main>
+        <div class="intro-box">
+            <p>Esta enorme barrera de protección comenzó a ser construida bajo el imperio de <strong>Qin Shi Huang</strong> y continuó hasta la <strong>dinastía Ming</strong>. Es un reflejo de la imponente arquitectura china y de la historia política y militar de la región. Fue declarada Patrimonio de la Humanidad por la UNESCO.</p>
+        </div>
+
+        <!-- Datos Clave -->
+        <div class="grid-stats">
+            <div class="stat-card">
+                <h3>Periodo</h3>
+                <p>Siglo III a.C. - XVI d.C.</p>
+            </div>
+            <div class="stat-card">
+                <h3>Longitud Total</h3>
+                <p>+20.000 km</p>
+            </div>
+            <div class="stat-card">
+                <h3>Altura / Ancho</h3>
+                <p>7-10 m / 7 m</p>
+            </div>
+            <div class="stat-card">
+                <h3>Turismo diario</h3>
+                <p>+50.000 visitantes</p>
+            </div>
+        </div>
+
+        <!-- Historia y Construcción -->
+        <section>
+            <h2>Historia y Construcción</h2>
+            <div class="two-columns">
+                <div>
+                    <h3>Cronología Histórica</h3>
+                    <ul>
+                        <li><strong>220 a. C. (Qin Shi Huang):</strong> Decide montar una gran defensa ante las invasiones de los pueblos del norte unificando las fortificaciones anteriores.</li>
+                        <li><strong>1368 - 1644 (Dinastía Ming):</strong> Se consolidó y prosiguió la construcción, adquiriendo las dimensiones y características arquitectónicas actuales.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Materiales Utilizados</h3>
+                    <ul>
+                        <li>Ladrillos</li>
+                        <li>Piedras talladas</li>
+                        <li>Arcilla</li>
+                        <li>Tierra comprimida</li>
+                    </ul>
+                    <p><em>Miles de personas (entre ellos campesinos, soldados y prisioneros) participaron en su levantamiento.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Objetivos -->
+        <section>
+            <h2>Objetivos de su Edificación</h2>
+            <div class="two-columns">
+                <div>
+                    <h3>Defensivos</h3>
+                    <ul>
+                        <li>Instalar puestos de vigilancia para evitar invasiones del norte.</li>
+                        <li>Facilitar la comunicación mediante señales de fuego y humo entre torres.</li>
+                        <li>Despliegue rápido de soldados en zonas críticas.</li>
+                        <li>Generar un efecto disuasorio en invasores potenciales.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Políticos</h3>
+                    <ul>
+                        <li>Reforzar las defensas tras el cambio de capital a Pekín (siglo XV).</li>
+                        <li>Ejercer control sobre las fronteras del norte.</li>
+                        <li>Mostrar el poderío imperial frente al resto del mundo.</li>
+                        <li>Representar la división entre las zonas "civilizadas" y los "bárbaros".</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estructuras Principales -->
+        <section>
+            <h2>Estructuras y Pasos Destacados</h2>
+            <ul>
+                <li><strong>Muros:</strong> Sucesión de muros interconectados diseñados bajo el objetivo de ofrecer una alta defensa estratégica.</li>
+                <li><strong>Torres:</strong> Puestos que inhibían la entrada de enemigos y contaban con una única escalera de acceso.</li>
+                <li><strong>Paso Juyong:</strong> De 7,8 m de altura y 5 m de ancho. Modernizado hasta las últimas dinastías.</li>
+                <li><strong>Paso Jiayuguan:</strong> Construido en la dinastía Ming, clave para el comercio por su rol en la Ruta de la Seda.</li>
+                <li><strong>Paso Shanhai:</strong> Diseñado para frenar a las tribus de Manchuria. Se conserva en excelente estado.</li>
+                <li><strong>Cuarteles:</strong> Espacios donde el imperio guardaba pólvora, armas de asedio y alojamiento para soldados.</li>
+            </ul>
+        </section>
+
+        <!-- Contexto Histórico y Económico -->
+        <section>
+            <h2>Contexto Histórico: De las Monedas a la Muralla</h2>
+            <p>Durante la época en que la estructura comenzaba su desarrollo en el siglo III a.C., la economía china utilizaba monedas circulares con un agujero cuadrado central, conocidas como <strong>Cash</strong> (monedas que evolucionaron a partir del trueque de herramientas de cobre y bronce como cuchillos y palas).</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Información recopilada para el sitio web | Guardado en GitHub Pages</p>
+    </footer>
+
+</body>
+</html>
